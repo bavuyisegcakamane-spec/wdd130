@@ -56,7 +56,7 @@ nav a {
 
 nav a:hover {
     background-color: var(--secondary-color);
-    color: white;
+    color: #ffffff;
     border-radius: 4px;
 }
 
@@ -150,7 +150,7 @@ section {
 }
 
 .adventure-gallery figure {
-    background-color: white;
+    background-color: #ffffff;
     border: 1px solid #ddd;
     padding: 8px;
     text-align: center;
