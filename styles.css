@@ -1,14 +1,18 @@
+/* Universal Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Body */
 body {
     font-family: Arial, sans-serif;
-    color: #333;
+    font-size: 1rem;
+    line-height: 1.6;
 }
 
+/* Layout width control */
 header,
 .grid,
 footer {
@@ -16,79 +20,106 @@ footer {
     margin: 0 auto;
 }
 
+/* Navigation (Flexbox) */
 nav {
+    background-color: #003366;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    background-color: #1d3557;
 }
 
+/* Navigation links */
 nav a {
     display: block;
     padding: 1rem;
-    text-decoration: none;
     color: white;
+    text-decoration: none;
     font-weight: bold;
 }
 
 nav a:hover {
-    background-color: #457b9d;
+    background-color: #002244;
 }
 
+/* Grid Layout */
 .grid {
     display: grid;
-    grid-template-columns: 1fr 20rem;
-    gap: 1rem;
+    grid-template-columns: 1fr 2fr;
     align-items: start;
-    margin-top: 1rem;
 }
 
+/* Main content */
 main {
     grid-column: 2 / 3;
+    margin: 1rem;
 }
 
-main h1 {
-    border-bottom: 1px solid #000;
+/* Heading */
+h1 {
+    color: #003366;
+    border-bottom: 2px solid #000;
     margin-bottom: 1rem;
-    padding-bottom: 0.5rem;
 }
 
+/* Profile Image */
 main img {
-    width: 150px;
-    height: auto;
     float: right;
+    width: 150px;
     margin: 0 0 1rem 1rem;
+    border: 1px solid #000;
+    padding: 2px;
+    box-shadow: 0 0 20px gray;
 }
 
-main p {
-    padding: 0;
+/* Paragraph */
+p {
+    margin-bottom: 1rem;
 }
 
+/* Aside */
 aside {
     grid-column: 1 / 2;
     grid-row: 1 / 2;
     width: 20rem;
-    margin: 1rem 0;
-    border: 1px solid #ccc;
-    padding: 1rem;
-    background-color: #eee;
-    color: #333;
+    position: relative;
+    margin: 1rem;
     text-align: center;
 }
 
+/* Aside image */
 aside img {
-    width: 200px;
+    width: 100%;
     height: auto;
-    margin-top: 0.5rem;
 }
 
+/* Overlay heading */
 aside h2 {
-    margin-bottom: 0.5rem;
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 0.5rem;
+    border-radius: 5px;
 }
 
+/* Footer */
 footer {
-    margin-top: 15px;
+    margin-top: 1rem;
     border-top: 1px solid #000;
     text-align: center;
-    padding: 1rem 0;
+    padding: 1rem;
+}
+
+/* ========================= */
+/* Class Selectors */
+/* ========================= */
+
+.box {
+    margin: 1rem;
+    padding: 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    background-color: #eef2ff;
+    color: #000;
+    border-radius: 8px;
 }
