@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Azania Rapids</title>
+    <meta name="description"
+      content="Contact Azania Rapids for rafting trips, bookings, and general inquiries.">
+    <meta name="author" content="Bavuyise Azania Gcakamane">
+    <link rel="stylesheet" href="styles/rafting.css">
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header>
+        <img src="images/logo.png" alt="Azania Rapids Logo" width="120">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="trips.html">Trips</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
+
+    <!-- MAIN -->
+    <main>
+
+        <!-- HERO / TITLE -->
+        <section class="hero">
+            <img src="images/hero.jpg" alt="Rafting Adventure">
+            <h1>Contact Us</h1>
+        </section>
+
+        <!-- CONTACT INFO -->
+        <section class="contact-info">
+            <h2>Company Information</h2>
+            <p><strong>Address:</strong> 25 Riverbend Drive, Eastern Cape, South Africa</p>
+            <p><strong>Phone:</strong> +27 45 555 0123</p>
+            <p><strong>Email:</strong> info@azaniarapids.com</p>
+
+            <iframe src="https://www.google.com/maps?q=Eastern%20Cape%20South%20Africa&output=embed"
+              title="Map location">
+            </iframe>
+        </section>
+
+        <!-- EMPLOYEES -->
+        <section class="employees">
+            <h2>Meet Our Team</h2>
+
+            <div class="employee-cards">
+
+                <figure>
+                    <img src="images/client.jpg" alt="Sarah Mokoena">
+                    <figcaption>Sarah Mokoena - Operations Manager</figcaption>
+                </figure>
+
+                <figure>
+                    <img src="images/client.jpg" alt="Daniel Ndlovu">
+                    <figcaption>Daniel Ndlovu - Senior River Guide</figcaption>
+                </figure>
+
+                <figure>
+                    <img src="images/client.jpg" alt="Lindiwe Jacobs">
+                    <figcaption>Lindiwe Jacobs - Customer Support</figcaption>
+                </figure>
+
+            </div>
+        </section>
+
+        <!-- FORM -->
+        <section class="contact-form">
+            <h2>Send Us a Message</h2>
+
+            <form>
+
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Your Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <fieldset>
+                    <legend>Purpose of Message</legend>
+
+                    <label>
+                        <input type="radio" name="purpose" value="general" checked>
+                        General Inquiry
+                    </label>
+
+                    <label>
+                        <input type="radio" name="purpose" value="reservation">
+                        Reservation Question
+                    </label>
+
+                    <label>
+                        <input type="radio" name="purpose" value="suggestion">
+                        Website Suggestion
+                    </label>
+                </fieldset>
+
+                <label for="message">Your Message</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <label class="checkbox">
+                    <input type="checkbox" name="subscribe">
+                    Please subscribe me to the monthly newsletter
+                </label>
+
+                <button type="submit">Send Message</button>
+
+            </form>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2026 Azania Rapids | Bavuyise Azania Gcakamane</p>
+
+        <nav class="socialmedia">
+            <a href="https://facebook.com" target="_blank">
+                <img src="images/facebook.png" alt="Facebook">
+            </a>
+            <a href="https://twitter.com" target="_blank">
+                <img src="images/twitter.png" alt="Twitter">
+            </a>
+            <a href="https://instagram.com" target="_blank">
+                <img src="images/instagram.png" alt="Instagram">
+            </a>
+        </nav>
+    </footer>
+
+</body>
+
+</html>
