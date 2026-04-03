@@ -12,7 +12,6 @@
 </head>
 
 <body>
-    <!-- HEADER -->
     <header>
         <img src="images/logo.png" alt="Azania Rapids Logo" width="120">
         <nav>
@@ -23,16 +22,12 @@
         </nav>
     </header>
 
-    <!-- MAIN -->
     <main>
-
-        <!-- HERO / TITLE -->
         <section class="hero">
             <img src="images/hero.jpg" alt="Rafting Adventure">
-            <h1>Contact Us</h1>
+            <h1>Contact Us - Azania Rapids</h1>
         </section>
 
-        <!-- CONTACT INFO -->
         <section class="contact-info">
             <h2>Company Information</h2>
             <p><strong>Address:</strong> 25 Riverbend Drive, Eastern Cape, South Africa</p>
@@ -40,16 +35,14 @@
             <p><strong>Email:</strong> info@azaniarapids.com</p>
 
             <iframe src="https://www.google.com/maps?q=Eastern%20Cape%20South%20Africa&output=embed"
-              title="Map location">
+              title="Map showing Azania Rapids location" loading="lazy" allowfullscreen>
             </iframe>
         </section>
 
-        <!-- EMPLOYEES -->
         <section class="employees">
             <h2>Meet Our Team</h2>
 
             <div class="employee-cards">
-
                 <figure>
                     <img src="images/employee1.jpg" alt="Sarah Mokoena">
                     <figcaption>Sarah Mokoena - Operations Manager</figcaption>
@@ -64,16 +57,13 @@
                     <img src="images/employee3.jpg" alt="Lindiwe Jacobs">
                     <figcaption>Lindiwe Jacobs - Customer Support</figcaption>
                 </figure>
-
             </div>
         </section>
 
-        <!-- FORM -->
         <section class="contact-form">
             <h2>Send Us a Message</h2>
 
-            <form>
-
+            <form action="#" method="post">
                 <label for="name">Your Name</label>
                 <input type="text" id="name" name="name" required>
 
@@ -83,18 +73,18 @@
                 <fieldset>
                     <legend>Purpose of Message</legend>
 
-                    <label>
-                        <input type="radio" name="purpose" value="general" checked>
+                    <label for="general">
+                        <input type="radio" id="general" name="purpose" value="general" checked>
                         General Inquiry
                     </label>
 
-                    <label>
-                        <input type="radio" name="purpose" value="reservation">
+                    <label for="reservation">
+                        <input type="radio" id="reservation" name="purpose" value="reservation">
                         Reservation Question
                     </label>
 
-                    <label>
-                        <input type="radio" name="purpose" value="suggestion">
+                    <label for="suggestion">
+                        <input type="radio" id="suggestion" name="purpose" value="suggestion">
                         Website Suggestion
                     </label>
                 </fieldset>
@@ -102,35 +92,31 @@
                 <label for="message">Your Message</label>
                 <textarea id="message" name="message" rows="5" required></textarea>
 
-                <label class="checkbox">
-                    <input type="checkbox" name="subscribe">
+                <label for="subscribe" class="checkbox">
+                    <input type="checkbox" id="subscribe" name="subscribe">
                     Please subscribe me to the monthly newsletter
                 </label>
 
                 <button type="submit">Send Message</button>
-
             </form>
         </section>
-
     </main>
 
-    <!-- FOOTER -->
     <footer>
         <p>&copy; 2026 Azania Rapids | Bavuyise Azania Gcakamane</p>
 
         <nav class="socialmedia">
             <a href="https://facebook.com" target="_blank">
-                <img src="images/facebook.png" alt="Facebook">
+                <img src="images/facebook.png" alt="Visit our Facebook page">
             </a>
             <a href="https://twitter.com" target="_blank">
-                <img src="images/twitter.png" alt="Twitter">
+                <img src="images/twitter.png" alt="Visit our Twitter page">
             </a>
             <a href="https://instagram.com" target="_blank">
-                <img src="images/instagram.png" alt="Instagram">
+                <img src="images/instagram.png" alt="Visit our Instagram page">
             </a>
         </nav>
     </footer>
-
 </body>
 
 </html>
