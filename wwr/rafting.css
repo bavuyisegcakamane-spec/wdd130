@@ -1,238 +1,217 @@
-/* ================= RAFTING.CSS (FIXED VERSION) ================= */
-
-:root {
-    --primary-color: #1d3557;
-    --secondary-color: #457b9d;
-    --accent1-color: #264653;
-    --accent2-color: #f1faee;
-    --highlight-color: #e9c46a;
-    --heading-font: Georgia, serif;
-    --body-font: Arial, sans-serif;
-}
-
+/* ================= GLOBAL RESET ================= */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* ================= ROOT VARIABLES ================= */
+:root {
+    --primary-color: #1d3557;
+    --secondary-color: #457b9d;
+    --accent-color: #e9c46a;
+    --light-color: #f1faee;
+    --font-heading: Georgia, serif;
+    --font-body: Arial, sans-serif;
+}
+
+/* ================= BODY ================= */
 body {
-    font-family: var(--body-font);
-    color: var(--accent1-color);
-    background-color: #ffffff;
+    font-family: var(--font-body);
+    line-height: 1.6;
+    background-color: white;
 }
 
-/* ================= LAYOUT ================= */
-header,
-main,
-footer {
-    max-width: 900px;
-    margin: 0 auto;
-}
-
+/* ================= HEADER ================= */
 header {
-    display: grid;
-    grid-template-columns: 160px 1fr;
+    background-color: var(--primary-color);
+    color: white;
+    display: flex;
     align-items: center;
-    background-color: var(--accent2-color);
-    border-bottom: 2px solid var(--secondary-color);
-    padding: 10px 14px;
+    justify-content: space-between;
+    padding: 10px 20px;
 }
 
 header img {
-    width: 100px;
+    width: 120px;
 }
 
-header nav {
-    display: flex;
-    justify-content: space-around;
-}
-
+/* ================= NAV ================= */
 nav a {
+    color: white;
     text-decoration: none;
-    color: var(--primary-color);
+    margin-left: 20px;
     font-weight: bold;
-    padding: 6px 10px;
 }
 
 nav a:hover {
-    background-color: var(--secondary-color);
-    color: white;
-    border-radius: 4px;
+    color: var(--accent-color);
 }
 
-/* ================= TYPOGRAPHY ================= */
-h1,
-h2 {
-    font-family: var(--heading-font);
-    color: var(--primary-color);
+nav a.active {
+    color: var(--accent-color);
 }
 
-h2 {
-    margin-bottom: 10px;
-}
-
-section {
-    margin: 16px 0;
-    padding: 10px;
+/* ================= MAIN CONTAINER ================= */
+main {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
 /* ================= HERO ================= */
 .hero {
     position: relative;
     text-align: center;
+    margin-bottom: 20px;
 }
 
 .hero img {
     width: 100%;
-    height: 250px;
+    height: 300px;
     object-fit: cover;
+    border-radius: 10px;
 }
 
 .hero h1 {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: rgba(38, 70, 83, 0.85);
+    bottom: 20px;
+    left: 20px;
     color: white;
-    padding: 0.6rem;
-    font-size: 1.5rem;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-family: var(--font-heading);
 }
 
-/* ================= INTRO (ABOUT FIX) ================= */
+/* ================= SECTIONS ================= */
+section {
+    margin: 20px 0;
+}
+
+/* ================= IMAGES ================= */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* ================= ABOUT PAGE ================= */
 .intro {
-    display: grid;
-    grid-template-columns: 150px 1fr;
-    gap: 15px;
+    display: flex;
+    gap: 20px;
     align-items: center;
 }
 
 .intro img {
-    width: 100%;
-    border-radius: 6px;
-}
-
-/* ================= HISTORY ================= */
-.history {
-    background-color: #f8f9fa;
-    border-left: 5px solid var(--secondary-color);
+    width: 200px;
+    border-radius: 10px;
 }
 
 .history-content {
-    display: grid;
-    grid-template-columns: 1fr 150px 1fr;
-    gap: 15px;
+    display: flex;
+    gap: 20px;
     align-items: center;
 }
 
 .history-content img {
-    width: 100%;
-    border: 2px solid var(--secondary-color);
+    width: 200px;
+    border-radius: 10px;
 }
 
-/* ================= ADVENTURE ================= */
-.adventure {
-    background-color: #f8f9fa;
-    border-left: 5px solid var(--secondary-color);
-}
-
+/* Adventure Gallery */
 .adventure-gallery {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 8px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
 }
 
 .adventure-gallery img {
-    width: 100%;
-    height: 80px;
+    width: 150px;
+    height: 100px;
     object-fit: cover;
+    border-radius: 5px;
 }
 
-/* ================= CONTACT ================= */
-.contact-info {
-    padding: 1rem;
-}
-
-.contact-info iframe {
-    width: 100%;
-    min-height: 250px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-}
-
-.employee-cards {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1rem;
-}
-
-.employee-cards figure {
-    text-align: center;
-}
-
-.employee-cards img {
-    width: 100%;
-    height: 150px;
-    object-fit: cover;
-    border-radius: 8px;
-}
-
-/* ================= FORMS ================= */
-form {
-    display: grid;
-    gap: 0.8rem;
-    max-width: 500px;
+/* ================= CONTACT PAGE ================= */
+.contact-info,
+.contact-form,
+.employees {
+    max-width: 800px;
     margin: 0 auto;
 }
 
-input,
-textarea {
+/* Map */
+iframe {
     width: 100%;
+    height: 300px;
+    border: none;
+    margin-top: 10px;
+}
+
+/* Employees */
+.employee-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.employee-cards img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* ================= FORM ================= */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-top: 10px;
+}
+
+form input,
+form textarea {
     padding: 8px;
-    border: 1px solid #bbb;
-    border-radius: 4px;
+    margin-top: 5px;
+}
+
+fieldset {
+    margin-top: 10px;
+    padding: 10px;
 }
 
 button {
-    padding: 0.7rem 1rem;
-    border: none;
-    border-radius: 6px;
-    background-color: #0b5ed7;
+    margin-top: 15px;
+    padding: 10px;
+    background-color: var(--primary-color);
     color: white;
-    font-weight: bold;
+    border: none;
     cursor: pointer;
 }
 
 button:hover {
-    background-color: #084298;
+    background-color: var(--secondary-color);
 }
 
 /* ================= FOOTER ================= */
 footer {
-    display: grid;
-    grid-template-columns: 1fr auto;
-    align-items: center;
-    margin-top: 15px;
-    border-top: 2px solid var(--primary-color);
-    padding: 10px 0;
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
 }
 
 .socialmedia {
-    display: flex;
-    gap: 12px;
+    margin-top: 10px;
 }
 
 .socialmedia img {
     width: 30px;
-}
-
-/* ================= RESPONSIVE ================= */
-@media (max-width: 800px) {
-
-    .employee-cards,
-    .history-content,
-    .intro {
-        grid-template-columns: 1fr;
-    }
+    margin: 0 5px;
 }
