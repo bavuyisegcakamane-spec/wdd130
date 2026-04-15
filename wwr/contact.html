@@ -23,22 +23,26 @@
     </header>
 
     <main>
+        <!-- HERO -->
         <section class="hero">
             <img src="images/hero.jpg" alt="Rafting Adventure">
-            <h1>Contact Us - Azania Rapids</h1>
+            <h1>Contact Us</h1>
         </section>
 
+        <!-- COMPANY INFO -->
         <section class="contact-info">
             <h2>Company Information</h2>
+
             <p><strong>Address:</strong> 25 Riverbend Drive, Eastern Cape, South Africa</p>
             <p><strong>Phone:</strong> +27 45 555 0123</p>
             <p><strong>Email:</strong> info@azaniarapids.com</p>
 
             <iframe src="https://www.google.com/maps?q=Eastern%20Cape%20South%20Africa&output=embed"
-              title="Map showing Azania Rapids location" loading="lazy" allowfullscreen>
+              title="Map showing Azania Rapids location" loading="lazy">
             </iframe>
         </section>
 
+        <!-- TEAM -->
         <section class="employees">
             <h2>Meet Our Team</h2>
 
@@ -60,10 +64,12 @@
             </div>
         </section>
 
+        <!-- CONTACT FORM -->
         <section class="contact-form">
             <h2>Send Us a Message</h2>
 
             <form action="#" method="post">
+
                 <label for="name">Your Name</label>
                 <input type="text" id="name" name="name" required>
 
@@ -73,28 +79,28 @@
                 <fieldset>
                     <legend>Purpose of Message</legend>
 
-                    <label for="general">
-                        <input type="radio" id="general" name="purpose" value="general" checked>
+                    <label>
+                        <input type="radio" name="purpose" value="general" checked>
                         General Inquiry
                     </label>
 
-                    <label for="reservation">
-                        <input type="radio" id="reservation" name="purpose" value="reservation">
+                    <label>
+                        <input type="radio" name="purpose" value="reservation">
                         Reservation Question
                     </label>
 
-                    <label for="suggestion">
-                        <input type="radio" id="suggestion" name="purpose" value="suggestion">
+                    <label>
+                        <input type="radio" name="purpose" value="suggestion">
                         Website Suggestion
                     </label>
                 </fieldset>
 
                 <label for="message">Your Message</label>
-                <textarea id="message" name="message" rows="5" required></textarea>
+                <textarea id="message" name="message" rows="4" required></textarea>
 
-                <label for="subscribe" class="checkbox">
-                    <input type="checkbox" id="subscribe" name="subscribe">
-                    Please subscribe me to the monthly newsletter
+                <label class="checkbox">
+                    <input type="checkbox" name="subscribe">
+                    Subscribe to newsletter
                 </label>
 
                 <button type="submit">Send Message</button>
